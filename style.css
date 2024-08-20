@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('new pic.jpg') no-repeat center center/cover; /* Add background image */
+  color: #fff;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px; /* Adjusted max-width for better fit */
+  padding: 20px;
+  background: #4a90e2; /* Blue background for the calculator */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between header, display, and buttons */
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.5rem; /* Adjusted font size */
+  color: #ffffff; /* White text color */
+}
+
+.display {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 80px; /* Increase height of display */
+  padding: 20px;
+  background: #ffffff; /* White background for the display */
+  color: #000; /* Black color for numbers */
+  border: none;
+  border-radius: 10px;
+  font-size: 2.5rem; /* Larger font size for numbers */
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  background: #00bcd4; /* Cyan background for buttons */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #141616; /* Darker cyan background on hover */
+}
+
+button:active {
+  background: #010d0e; /* Even darker cyan background when pressed */
+}
+
+#ButtonC {
+  background: #f44336; /* Red background for clear button */
+  color: white;
+}
+
+#ButtonC:hover {
+  background: #d32f2f; /* Darker red on hover */
+}
+
+#ButtonEquals {
+  background: #4caf50; /* Green background for equals button */
+  color: white;
+  grid-column: span 2; /* Makes the button span across two columns */
+}
+
+#ButtonEquals:hover {
+  background: #388e3c; /* Darker green on hover */
+}
